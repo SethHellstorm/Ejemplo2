@@ -11,7 +11,9 @@ import com.example.ejemplo2.screens.SecondScreen
 @Composable
 fun AppNavigation(){
 val navController = rememberNavController()
-    NavHost(navController = navController, startDestination = AppsScreens.FirstScreen.route){
+    NavHost(
+        navController = navController,
+        startDestination = AppsScreens.FirstScreen.route){
        //Navegacion implicita
         composable(route = AppsScreens.FirstScreen.route){
             FirstScreen(navController)
